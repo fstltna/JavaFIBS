@@ -1,0 +1,29 @@
+name: javafibs-java # you probably want to 'snapcraft register <name>'
+base: core18 # the base snap is the execution environment for this snap
+version: '1.001' # just for humans, typically '1.2+git' or '1.3.2'
+summary: Java client for the FIBS backgammon server
+description: |
+  Java client for the FIBS backgammon server
+
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+icon:  javafibs_icon.png
+title: JavaFIBS
+
+apps:
+  javafibs:
+    command: startjfibs
+parts:
+  javafibs:
+    # See 'snapcraft plugins'
+    plugin: dump
+    source: .
+#    build-packages: [default-jre]
+#    stage-packages: [default-jre]
+    organize:
+      javafibs: build/
+      javafibs.1: man/man1/
+
+architectures:
+  - build-on: amd64
+

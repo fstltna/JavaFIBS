@@ -1,0 +1,34 @@
+This protocol is for carrying brief player profiles in the client field in the FIBS CLIP 
+protocol.
+
+The client field can hold up to 20 7-bit ASCII characters. The possible useable characters
+ranges from the numbers 33 to 126 or 0100001 to 1111110 in binary.
+
+The characters in the player profile protocol are divided as follows
+
+
+Char1: Identifies this protocol and holds the gender of the player
+
+01111 xy 
+----- -- 
+ |    |  
+ |   specifies the gender (00 = male ">", 10 = female "<", 01 = computer "=", 11 = unknown "?")
+specifies that this protocol is used (60) (along with a string length of 20).
+
+
+Char2-3: Player's country which is specified by the (capital) two letter country code,
+ie SE for Sweden and US for USA. Non specified country should be NT (Neutral Zone).
+
+
+Char4-19: Player's name. The first letters in the first and last name muststart with a
+capital letter and only A-Z, a-z and the underscore character _ (simulates space char)
+are allowed in the name. To not waste a character for a space between first and last
+name the first letter in the last name is subtracted with 30 so it becomes a non legal
+letter character but stays in the range of legal characters for the CLIP. The first non
+legal character is added with 30 to become legal again when parsing the CLIP client field.
+Unused positions must be filled with the underscore character _.
+
+
+Char20: Specifies the client using this protocol.
+
+(0100001 - 0100111 = JavaFIBS)

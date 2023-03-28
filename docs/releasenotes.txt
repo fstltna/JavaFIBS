@@ -1,0 +1,378 @@
+Here are the notes about user visible changes for each version in JavaFIBS 2001.
+
+
+Changes and fixes:
+
+v1.011 (20080317)
+------
+* Change: Use a darker color for numeric labels in statistic graph, former color was hard to read on grey background (inim)
+* Fix: Newly created "User Programmable Button" did not appear in the GUI (or appeared broken, depending on JDK version) (bug 093, inim)
+* Fix: "Automatic Jellyfish export" did not work as advertised (bug 085, inim)
+* Fix: First login after running with non-existing preferences (either new install or new user) failed to login at first attempt (inim)
+* Fix: Profile Names with space(s) caused login problems, plus some more tricky PPP parser stability improvements (bug 089, inim)
+* Fix: Unnecessary textures and untested boards erraneously shipped with 1.010, reverted to 1.009 w/r to both (bug 087, inim)
+* Fix: Worked around a parser bug which sometimes crashed JF after FIBS quakes, it now silently recovers (bug 097, inim)
+
+v1.010 (20080309)
+------
+* Change: GTK look and feel for Unix systems supported (bug 017, inim)
+* Change: Path names for Resources, Saved Matches and User prefs are no longer hardcoded and can be set by the user (see docs section 11) (bug 067, inim)
+* Change: Repbot context menus added to player and inviter tables (bug 007, inim)
+* Change: New About dialog, which displays additional information about the Java runtime used by JavaFIBS 2001 (inim)
+* Change: Minor performance improvements all over, especially for the statistics window (inim)
+* Change: New Preferences option to automatically save all matches in both internal and Jellyfish format (inim) 
+* Change: Countrycodes have been updated to contain all existing nations (Jan 2008) as per ISO 3166-2 definition (inim) 
+* Change: The "refresh" button of the player list sends the "who" command 4 times now, setting sortorder to rrating, rating, name, and login respectively. This should work around the "invisible player" problem a lot better (inim)
+* Change: New naming scheme for saved matches: Player_vs_Opponent_YYYYMMDDHHMMSSNNNN, where Y=Year, M=Month, D=Day, H=Hour, M=Minute, S=Seconds and N=Milliseconds (inim)
+* Change: Updated ID list of clients supporting PPP (PlayerProfileProtocol) (TourneyBot, JavaCLIPLib, and Delfibs) (inim)
+* Change: Sorting match length in statistics dialog is now in numerical order (was A-Z), sorting opponent names is now case insensitive (bug 027, inim)
+* Fix: Sound was distorted when using JDK 1.5 and up on Windows - probably on other systems too (bug 016, inim)
+* Fix: Saving positions from match recorder button crashed. Works again, positions can be saved as ASCII or Jellyfish *.pos files (bug 019, inim)
+* Fix: Don't intercept ctrl-x key input anymore, it interferes with cut/paste shortcuts (switched to command mode before) (inim)
+* Fix: Problems with I/O when loading or saving Preferences, Friends, Villain, Buttons, and other Resources are handled more graceful now. (inim) 
+* Fix: Fixed typo in command menu ("Average") (inim)
+
+v1.009
+------
+* Fixed bug that hung the client if you started to play/watch a match and both the player table and the board was set in separate windows.
+* Added a five year and a decade view option to the rating graph.
+* Added the current user's name to the title bar and an indication if (s)he is offline.
+
+v1.008
+------
+* Fixed bug that hung the client occasionally during match saving.
+* Changed save popup in text windows to work better with IBM JRE (hopefully).
+
+v1.007
+------
+* Fixed bug that made so only .gif backgrounds had their size shown in the board selection dialog.
+* Fixed so that when you put the board in a separate window, it will resize itself to fit the board. 
+
+v1.006
+------
+* Changed so the low priority messages sent to FIBS aren't shown, no matter if "show sent commands" option is chosen or not.
+* Fixed bugs in the starting and saving of unlimited matches.
+* Fixed bug on the (mirrored) vector where the clickable cube areas didn't match the graphical cube.
+* Fixed bug on the (mirrored) vector board that didn't updated the cube graphics properly when it was accepted.
+
+v1.005
+------
+* Added pip difference next to the pip counts in the "score panel"; 
+* Fixed bug that didn't let you save an empty friend/villain list, making so you couldn't remove the last person from the lists.
+* Changed so that double clicking on a friend in the friend table will either open up a chat window if the friend is online or open up the leave message dialog otherwise. 
+* Added last logout, rating and rating change since the last time to the friend table.
+* Added so the commands sent to the server can have two different priorities.
+* Added the last login date and login host in the welcome greeting when the user logs in.
+* Fixed so the match saving function will work better with resumed matches.
+* Removed the button in the toolbar to use the system area for all outputs and added it as a menu item in the preferences menu. 
+* Added so one can change the column to sort on in the friend table by clicking on the respective column header.
+* The rating graph is now drawn using anti aliasing.
+* Added toggle ready to the command->toggle menu.
+* Added dicetest command to the command->other menu.
+* Added average (the usage of FIBS) command in the command->other menu. 
+* Fixed so that the cube in the vector (mirrored) board is placed in the empty ditches when a player owns it.
+* Prepared the player profile protocol for the JavaFIBS 2oo3D version.
+* Added a tooltip to the opponent's name in the board that shows the rating and experience. 
+* Fixed so that the win-lose tooltip in the player table is updated when you change the points.
+* Added an undo button to the board toolbar.
+* Remade the programmable buttons so you can add, remove, and update buttons instead of having a fixed set of buttons.
+* Included a help menu that will bring up the full user guide in a simple HTML browser window.
+* Added a few more images to the image folder.
+
+v1.004
+------
+* Added so one can use the %-tags for the decline message.
+* Fixed bug that made the command in the 10th programmable button the same as the 11th.
+* Fixed bug that made so the winner's score was shown for both players in the match results dialog in the statistics.
+
+
+v1.003
+------
+* Fixed so the custom *_small boards reject area now are visible.
+* Improved speed when dragging on the bitmap boards.
+* Made so the rating columns always have two decimals so all ratings will be aligned nicely in the column.
+* Changed so any of the tags for the programmable buttons can be used in the autogreet and autothank messages also.
+* Added a tag, %Inviter, for the programmable buttons to include the selected Inviter also.
+* Fixed bug in the tags substitution that would kill the interface if you used more than one of the same tags in a button.
+* Added a button in the board toolbar to toggle the pip count on and off.
+* Made so that gagged persons' invitations don't show up in the system window.
+* Moved the columns "Win" and "Lose" in the invitation table.
+* Added the Mac Look-and-Feel to use for MacOS X users.
+* Patched bug in the match recorder which occasionally output an empty move to the file instead of the real one.
+
+v1.002
+------
+* Fixed bug so that when a villain starts watching you (s)he will be blinded automatically.
+* Fixed the decline message bug which didn't use the selected message.
+* The chat windows are now separate windows instead of dialogs for the main frame.
+* Set the background on the tables to the same as the background of the text background.
+
+v1.001
+------
+* Fixed so that the fonts are saved in the text areas.
+* Changed the programmable buttons so that the tags %Player, %Friend, %Villain and %Opponent will be substituted by the selected persons in corresponding tables and the last played opponent.
+
+v1.000
+------
+* Changed the type of the text above the board to bold so it becomes more visible.
+* Fixed bug that made so you couldn't drag checkers out.
+* The "leave message" in the friend table is now working again.
+* Changed the auto invite to become a dialog instead of a menu item with an added button for it in the player toolbar.
+* Fixed bug that didn't save match/rating data for newly created users.
+* Fixed bug that showed all users in the server even though some should have been filtered away at startup.
+* Fixed so the text fields won't try to set the caret to an illegal position any more.
+* Changed so the client won't load a person's preferences when the name is entered in the login dialog; only when the "change user" menu option is selected.
+* Added an option to set the board as a floating window.
+* Fixed so the last five user defineable buttons work now.
+* Changed the login routine after a new user has been registered on FIBS.
+* Added an option in the command menu to show the ongoing games on FIBS.
+* Changed so that when a person gets dropped (and has his/her status changed to unknown) while playing the Opponent field in the table will not be cleared but instead show the person who dropped.
+* Added and option in the Preferences menu to change the fonts in the different text areas.
+* Fixed bug that made so the autogreet and autothank buttons couldn't be saved in a non selected state.
+ 
+v0.999
+------
+* The last selected points in the player table is now saved.
+* The positions and widths of the columns in the player table are now saved.
+* Added an option in the preferences menu to automatically connect to FIBS when JavaFIBS is loaded.
+* Fixed so the size of the window is saved.
+* Changed the resignation button on the vector board so it doesn't cover the opponent's dice.
+* Added 15 command buttons to the main toolbar and a dialog to change the commands and icon for them.
+* Fixed bug that made so the previous user's friends were still coloured when changed to a new user.
+
+v0.188
+------
+* The toggle commands in the menus/buttons are now updated at the same time.
+* Fixed bug that made parts of the "roll dice" text linger on after player had rolled on the vector board. 
+* Fixed bug in the tables that made so the selected person wouldn't be marked if the "Name" column was moved to another place and generate an error if certain columns were moved where the Name column had been. 
+* The last selected sorting column in the player table is now saved.
+* The status bar status is now saved.
+* Translucency does now also affect checkers and dice on the vector board.
+* Fixed bug that didn't output any text when someone won a game.
+* Added game text with icons to the status bar.
+* New icon for the target help for checkers on the board toolbar.
+* Added a new cube icon for use in the status bar.
+* Added an option in the preferences menu to change the decline invitation message.
+
+v0.187
+------
+* Added an option to change the translucency on the checkers and dice on the bitmap boards.
+* Implemented the save option in the text areas.
+* Changed the update-all-players button in the player table to clear the table before receiving the update.
+* Fixed bug that made an exception when any text area was cleared with the popup menu option.
+* Fixed bug that shrunk/expanded the split panes when enter was pressed when writing in the input field, if the one touch expanding button had been used earlier.
+* Fixed bug that made so the villains and friends weren't saved properly.
+
+v0.186
+------
+* Changed so the popup menus in the text areas pop up with click instead of release of the mousebutton.
+
+v0.185
+------
+* Fixed bug that made so you couldn't log in if the "remember password" checkbox wasn't checked.
+* Changed the country matching in CthulhuUtils and added more countries.
+* Fixed bug in the rating graph which made so the current time wasn't included from start.
+* Reinserted the button for the player table window to the toolbar and fixed so no dialog will appear if the player table was visible when transformed to a window. 
+* Added win/lose information to the player table in the form of tooltips and as columns in the invitation table.
+* Changed the "player profile protocol" to exclude the age totally in favor for one more character to the name instead, and the name is allowed to have blank space.
+
+v0.180
+------
+* Removed the player table window and its button on the main toolbar.
+* Added a button for sound on the main toolbar and removed the sound menu option in the preferences menu.
+* Removed the breakpoint insertion button from the board toolbar.
+* Added a "remember password" check box in the login dialog to let the user decide wether to save the password or not.
+* Fixed bug that didn't set the connected to false when you couldn't connect.
+* Changed the "wait while loading" dialog.
+* Implemented most of the "player profile protocol".
+* Added a option in the player's list to view the player's profile.
+* Added a menu option in the command menu to set the (E-Mail) address field in FIBS.
+* Added a menu option in the JavaFIBS menu to change the current user.
+* Changed so the options in the command menu only are accessible if connected.
+* Fixed bug that made JavaFIBS fail to run if the selected board wasn't found at start-up.
+* Changed the board metrics files to normal.metrics, reverse.metrics and information.metrics instead of <boardname>.jfmn/.jfmr/.jfi
+* Fixed bug that saved empty, useless preferences under the user directory.
+
+v0.171
+------
+* Changed numbers to spots on the dice on the vector board.
+* Fixed bug that made the colour/texture dialog not work completely (opponent2 colour).
+
+v0.170
+------
+* The window's location, size and dividers are now saved.
+* The chat field and the shout/notify field are always hidden when the button "only use the system area for text" is pressed.
+* A popup menu was added to the text fields to enable users to clear and save (save not working yet) the text in them.
+* Changed player's match information above the graphical board and below the opponent's.
+* Fixed bug which treated the user logging in as a new user disregarding if it was a new or old user.
+* Fixed bug that made moved checkers look like unmoved ones when the sound was on but sound system was not allocated..
+* Fixed so the friends and villains are saved when exiting.
+* The graphics on the vector board are now antialiased.
+* The sound resources are now only allocated when the sound is turned on.
+
+v0.165
+------
+* Fixed bug from last version that made so the doubling didn't work on the vector board.
+* Added an option to output all text into the system area.
+
+v0.160
+------
+* Most of the present basic settings are now saved.
+* Changed the file structure so that all files belonging to a user is stored in \user\username\ instead of history and profiles
+* Fixed bug that occurred when the vector board was showing at startup.
+* Added a "villain" tool (gag and blind) next to the friend tool.
+
+v0.156
+------
+* Fixed so the friends are set to offline when the user connects.
+* Added drag and drop to the vector board.
+* Improved the drag and drop on the board to accept combo moves.
+* Added optional help rectangles when dragging to show drop targets for the checkers on the board.
+* Added a button in the board toolbar to activate/deactivate help rectangles.
+
+v0.155
+------
+* Changed the order of the players in the JellyFish match converter.
+* Fixed a bug in the parser which concerned the match saving.
+
+v0.154
+------
+* Fixed bug in the point selection box (changed Unlimited to unlimited  and Resume to resume for consistency).
+* Made the status bar optional with a menu option in the preferences menu.
+* Added an entry for the user's current rating in the rating graph.
+* Changed so the popup menus appear when the user presses the button instead of releases it.
+* Fixed bug that displayed the wrong score for the players after a game had been finished.
+
+v0.153
+------
+* Patched the ArrayIndexOutOfBoundsException bug.
+
+v0.152
+------
+* Changed the System area to accept multi-coloured text and coloured different outputs.
+* Removed indenting of the game text.
+* Altered the selection handling in the tables.
+* Popup menus are now brought forth by double-clicking on the left mouse button or single-clicking on the right mouse button in the tables. 
+
+v0.151
+------
+* Fixed bugs connected to the friend table.
+* Added a whois-friend-button in the friend table.
+* Added icons to the tabs (board/players/system).
+* Added idle time to the player table.
+* Added a button to update the whole player table.
+
+v0.150
+------
+* Moved the system area to the tab pane where the board and players are.
+* Added a fairly advanced friend tool to where the system area was.
+* Friends are now saved along with their colour and some other changes to the friends.
+* Status/info bar added at the bottom of the client which shows important terminal output.
+* Changed the sound routine so it won't crash the system (Windows) anymore (hopefully).
+* Better (instant) feedback on the board when playing.
+* Added a delay when boards are shown.
+* Fixed bug that made so the rating changes didn't show when you had toggle rating on.
+* Added a board when someone couldn't move when importing a match, just to switch the turn for consistency.
+* Changed the point slider in the popup menu to a point box in the player table's toolbar. 
+* Added button for invite in the player table toolbar.
+* Added support for using the exp in the statistics.
+* Some minor changes to the graphics.
+* Temporary saving of last user/pw so the user won't have to type it in when logging in.
+
+v0.140
+------
+* Added feature to view internal format matches on the board.
+* Added load button on the board toolbar.
+* The boards are now always added to the board history so one can scroll through the boards. The history will be cleared every time a new match starts.
+* Removed the Record button on the board toolbar since it's not needed any longer.
+* Changed the save position option on the board to a save file dialog instead of an option dialog.
+* Added a Tools menu and moved the match converter and the statistics to it.
+* Added a dashed line in the rating graph that is painted from the start of the graph to the first visible position in the graph.
+* ASCII position file available for saving.
+* Fixed bug in the load/save friends and gags.
+
+v0.135
+------
+* The chat area and the notify/shout area stop autoscrolling if you scroll up or click your mouse in it and starts autoscrolling again when the scrollbar is placed at the bottom.
+
+v0.134
+------
+* Fixed small bug in the JellyFish match converter.
+
+v0.133
+------
+* Fixed the bug that the player's colour instead of the colour of the text on the board was changed when you tried to change the colour of the text on the board.
+* Fixed bug so that the point numbers are right when you mirror the vector board.
+* Fixed bug that made a null pointer exception if no textures was chosen for the vector board when used.
+* Changed a little in the match recording.
+
+v0.132
+------
+* Fixed the bug that caused a NullPointerException in IBM's JVM when converting an internal match file to JellyFish format.
+* Added some shortcut commands when the command line is active:
+	- Ctrl-s selects say in the command combobox
+	- Ctrl-k selects kibitz 
+	- Ctrl-y selects shout
+	- Ctrl-x selects command
+	- Ctrl-w selects whisper
+	- Ctrl-t selects tell
+* Added a basic colour/texture dialog so you can change the colours/textures on the vector board.
+* Fixed bug that didn't update a player to "unknown" status if the opponent dropped connection on him/her when (s)he was playing.
+	
+v0.131
+-----
+* Fixed so the cube contains its value if the player accepts the cube.
+* Fixed the bug that didn't draw the whole cube when the player got it on the vector board.
+* Fixed the bug that sometimes wrote double lines at the end of a converted JellyFish match.
+
+v0.130
+------
+* Added a preferences dialog to set when you want matches to be logged (while playing and/or watching).
+* Updated and rewrote the vector board to accept both textures and colours and the ability to mirror the board.
+* Removed the drag option from the vector board because of technical issues.
+* Made changes to the preferences board dialog to reflect the new vector board and disabled the colour/texture change button in the board preferences since it's not functionable yet.
+* Fixed bug that made an exception when the player's table was cleared and re-updated.
+* Removed a game_command (no 16 in the internal format - score2) from the match formats.
+* Changed so sound is by default off when JF starts because it crashes windows occasionally when playing sounds.
+* Fixed so the JellyFish match converter closes the converted file when it's done.
+* Removed the point combo box from the player's list.
+
+v0.122
+------
+* Changed where some sounds are played.
+* Fixed bug that made some game commands (in the internal match format) to be included first in a new match if the old had been canceled.
+* Fixed bug where the doubled cube visually (on the board) gets a higher value after it has been dropped.
+
+v0.121
+------
+* Fixed bug in internal match generation that missed to write the start command.
+
+v0.120
+------
+* Changed how matches are recorded. They are now always saved on file as an internal format and can thereafter be converted to other formats with the new conversion dialog in the prefs menu.
+* Changed hierarchy in the matches directory.
+* Rewrote the sound routine since the one in 0.110 leaked memory.
+* Changed the size of the command and name JComboBoxes by the command line (again).
+* Made so that the written person in the name JComboBox isn't removed/re-inserted, which caused the name to blink occasionally.
+
+v0.110
+------
+* Included an ignore option to the invitation list to remove invites silently. 
+* Added basic sound support and included a sound archive, with on/off option in the main prefsmenu.
+* Fixed bug (which was implemented in v0.100) so the selected person in the name jcombobox doesn't disappear while using tell.
+* Less (very small) delay at the beginning while dragging checkers.
+* It's now possible to copy text from the chat area and the shout/notify area with the shortcut command at the expense of that the command line loses focus when person clicks around in those areas.
+* Friends and gags are now loaded when the interface is started instead of each time the person logs in on FIBS (which caused added people to be lost when person dropped connection and reconnected).
+* Changed "ignore" to "gag" (relation) in the player's table popup menu.
+
+v0.100
+------
+* The bug that made so the visible name in the name combobox (used with tells) wasn't always the one that was used is now fixed.
+* Bug that made the interface cease functioning if you had focus on an editable JCombobox while changing to Metal look-and-feel is now fixed. 
+* Board pictures no longer require a .gif extension but should work with any picture format that java can handle.
+* Added a label in the player's list toolbar to show how many users are logged on.
+* New-user-registration dialog will now display an error if the person tried to use illegal characters in the name.
+* A point combobox was added to the player's list toolbar to eventually replace the point slider in the popup menu. Combobox has no functionality right now.
+* The menus won't be overdrawn by the board if they are open any more.
+* Some changes to the boards´ graphics was made.
+* Set new preferred size to the comboboxes by the command line so they will match the text field's size.

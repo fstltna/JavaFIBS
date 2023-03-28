@@ -1,0 +1,1266 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<title>Instructions for JavaFIBS 2001</title>
+</head>
+
+<body>
+
+<h1>JavaFIBS 2001 User Guide</h1>
+
+<p>by Peter Nevalainen and Ingo Macherius</p>
+
+<h2><a name="introduction"></a>1. Introduction</h2>
+
+<p>JavaFIBS 2001 is a graphical interface for the <a
+ href="http://www.fibs.com/">First Internet Backgammon Server
+(FIBS)</a> . JavaFIBS is, as the name hints, completely made in java and should 
+work on all computer systems with a Java 2 Runtime Environment v1.3 installed. JavaFIBS 2001 is able to run on Windows, Linux, Solaris,
+and Mac OS X operation systems and it is possible that it
+will work on OS/2 and AIX systems and
+other platforms that the Java 2 engine has been developed for.</p>
+
+<p>The official JavaFIBS homepage is located at <a
+ href="http://www.fibs.com/javafibs/">http://www.fibs.com/javafibs/</a>.</p>
+
+<h2><a name="getting_started"></a>2. Getting Started</h2>
+
+<h3><a name="requirements"></a>2.1 Requirements</h3>
+
+<p>JavaFIBS 2001 will need at least 32 Mb of main memory to run.
+While JavaFIBS 2001 can be run on as low as ordinary P133
+systems or similar, this will probably be too slow for most
+people.</p>
+
+<p>JavaFIBS 2001 also requires Java 2 Runtime Environment 1.3.1
+or higher to run. The JRE (Java Runtime Environment) can be downloaded from <a
+ href="http://www.java.com/">http://www.java.com/</a> . It is advisable 
+to download the latest version available since it will probably work better and
+faster with JavaFIBS 2001, but avoid beta versions.</p>
+<P>MacOS X users already have a proper Java Runtime Environment installed with 
+the operating system.</P>
+
+<h3><a name="installation"></a>2.2 Installation</h3>
+
+<p>To install JavaFIBS 2001 unzip the JavaFIBS2001.zip archive to
+any directory. This can be achived with a program such as <a
+ href="http://www.winzip.com">WinZip</a> or the free <a href="http://www.7-zip.org/">7ZIP</a> for Windows computers or
+unzip on other computer platforms.</p>
+
+<h4><a name="javafibs_on_windows"></a>2.2.1 
+Running JavaFIBS 2001 on Windows
+and MacOSX</h4>
+
+<p>To run JavaFIBS 2001 on Windows computers double click on the
+JavaFIBS.jar file. If nothing happens or a dialog asks which
+program to open JavaFIBS.jar with, you have probably do not have the Java 2 JRE 
+installed properly.</p>
+
+<h4><a name="javafibs_on_other"></a> 2.2.2 Running JavaFIBS
+2001 on Solaris/Linux/Others</h4>
+
+<p>Open a shell/console/terminal window and type: <font
+ face="Fixedsys">java -jar JavaFIBS.jar when standing in the JavaFIBS2001 folder.</font></p>
+
+<h3><a name="register"></a>2.3 Donationware</h3>
+
+<p>After being a shareware program up to version 1.009, JavaFIBS 2001 is now a free to use program. However, if you like and use
+this program you may consider donating money for our efforts if you feel wealthy enough. On the <a
+ href="http://www.fibs.com/javafibs/donation.html">donation page</a>
+ you can find instructions for the donation procedure.</p>
+
+ 
+<h3><a name="license_agreement"></a>2.4 License Agreement</h3>
+
+<ol>
+    <li>This license applies to the product called "JavaFIBS", 
+  a program for the Java platform, published by Peter Nevalainen under the 
+  concepts of freeware (or donationware), and the accompanying documentation. The terms "Program" 
+  and "JavaFIBS" below, refer to this product. The licensee is addressed as 
+  "you". The author refers to Peter Nevalainen, Ingo Macherius and Thomas A. Moulton. 
+    <li>You may copy and distribute verbatim copies of the 
+  program's executable code and documentation as you receive it, in any medium, 
+  provided that you conspicuously and appropriately publish only the original, 
+  unmodified program, with all copyright notices and disclaimers of warranty 
+  intact and including all the accompanying documentation, example files and 
+  anything else that came with the original. 
+    <li>Except when otherwise stated in this documentation, you 
+  may not copy and/or distribute this program without the accompanying 
+  documentation and other additional files that came with the original. You may 
+  not copy and/or distribute modified versions of this program. 
+    <li>You may not copy, modify, sublicense, distribute or 
+  transfer the program except as expressly provided under this license. Any 
+  attempt otherwise to copy, modify, sublicense, distribute or transfer the 
+  program is void, and will automatically terminate your rights to use the 
+  program under this license. However, parties who have received copies, or 
+  rights to use copies, from you under this license will not have their licenses 
+  terminated so long as such parties remain in full compliance. 
+    <li>By copying, distributing and/or using the program you 
+  indicate your acceptance of this license to do so, and all its terms and 
+  conditions. 
+    <li>Each time you redistribute the program, the recipient 
+  automatically receives a license from the original licensor to copy, 
+  distribute and/or use the program subject to these terms and conditions. You 
+  may not impose any further restrictions on the recipients' exercise of the 
+  rights granted herein. 
+    <li>You may not disassemble, decompile, re-source or 
+  otherwise reverse engineer the program. 
+    <li>You agree to cease distributing the program and data 
+  involved if requested to do so by the author. 
+    <li>The author does not warrant that the functions 
+  contained in the Program will meet your requirements, or that the operation of 
+  the Program will be uninterrupted or error free, or that any defects that may 
+  exist in the Program will be corrected. Errors may exist in the Program. 
+    <li>The Program and accompanying written material are 
+  provided "as is" without warranty of any kind and is used at your own risk. 
+    <li>Neither the author nor anyone else who has been involved
+        in the creation, production or delivery of this product
+        shall be liable for any direct, indirect, consequensial
+        or incidental damages arising out of the use of or
+        inability to use this product.</li>
+</ol>
+
+<h2><a name="main_interface"></a>3. The Main Menu and Toolbar</h2>
+
+<p>The interface is divided in different parts which are
+described below.</p>
+
+<h3><a name="main_toolbar"></a>3.1 Main Toolbar</h3>
+
+<p>The main tool bar contains some predefined buttons and fifteen
+user definable buttons.</p>
+
+<h4><img height="16" src="../images/connect.gif" width="16"
+ align="textTop" border=1 > Connect/Disconnect</h4>
+
+<p>This button connects JavaFIBS 2001 to the FIBS server when it
+is pressed in and disconnects the client from the server when it
+is released. When pressed it will open the Login dialog where you
+enter your username and password you have in FIBS.</p>
+
+<h4><img height="16" src="../images/ready.gif" width="16"
+ align="textTop" border="1"> Ready for Invitations</h4>
+
+<p>This button makes you ready to accept invitations from other
+players when it is pressed and sets you to an not ready status
+when it is released.</p>
+
+<h4><img height="16" src="../images/silent.gif" width="16"
+ align="textTop" border=1 > Silent Shouts</h4>
+
+<p>This button makes so you will not hear the players that are
+shouting in FIBS while it is pressed.</p>
+
+<h4><img height="16" src="../images/notify.gif" width="16"
+ align="textTop" border=1 > Notify When Users Enter and Leave</h4>
+
+<p>This button will show you when users enter and leave while it
+is pressed and will not show you that information if it is
+released.</p>
+
+<h4><img height="16" src="../images/report.gif" width="16"
+ align="textTop" border=1 > Report Starting and Ending of Matches</h4>
+
+<p>This button will show you starting and ending of matches while
+it is pressed and will not show you the information if it is
+released.</p>
+
+<h4><img height="16" src="../images/gametext.gif" width="16"
+ align="textTop" border=1 > Game Information</h4>
+
+<p>This button lets select if you want to see when people roll,
+double and move while you are playing or watching or not.</p>
+
+<h4><img height="16" src="../images/send.gif" width="16"
+ align="textTop" border=1 > Sent Commands to FIBS</h4>
+
+<p>This button selects if you want to see the commands that are
+sent to the server. Both those you are sending and also those
+that JavaFIBS 2001 are sending without your interaction will be
+shown.</p>
+
+<h4><img height="16" src="../images/greet.gif" width="16"
+ align="textTop" border=1 > Auto Greet Opponent</h4>
+
+<p>This button will automatically greet your opponent every 
+time you start a new match if it is pressed. When it is pressed, a dialog
+will pop up where you can type in the message you want to tell
+your opponent. If you enter "%Opponent" in the greeting it will be substituted by
+your opponent's name.</p>
+
+<h4><img height="16" src="../images/thank.gif" width="16"
+ align="textTop" border=1 >        
+             
+             
+Auto Thank Opponent</h4>
+
+<p> This button will automatically thank your opponent 
+for the match after the match has been finished. When pressed, a dialog will pop up
+where you can type in the message you want to tell
+your opponent. If you enter "%Opponent" in the message it will be substituted by your
+opponent's name.</p>
+
+<h4><img height="16" src="../images/away.gif" width="16"
+ align="textTop" border=1 > Away</h4>
+
+<p>This button will set you into away mode if it is pressed and
+taken back again when it is released. When it is pressed a dialog
+will pop up where you can type in the away message you want to be
+shown.</p>
+
+<h4><img height="16" src="../images/ptablewin.gif" width="16"
+ align="textTop" border=1 > Player Table to Window</h4>
+
+<p>This button will take the player table from the tab and put it
+into a separate resizable window.</p>
+
+<h4><img height="16" src="../images/boardwin.gif" width="16"
+ align="textTop" border=1 > Board to Window</h4>
+
+<p>This button will take the graphical board from the tab and put
+it into a separate resizable window.</p>
+
+<h4>User Definable Buttons</h4>
+
+<p>              
+      To the far right your own customisable buttons
+will appear when you add them. See <A href="instructions.html#programmable_buttons">10
+Programmable Buttons</A> for more information.</p>
+
+<h3><a name="main_menu"></a>3.2 Main Menu</h3>
+
+<h4><a name="javafibs_menu"></a>3.2.1 JavaFIBS Menu</h4>
+
+<p>This menu is contains some commands that are for the interface
+and its operation with FIBS.</p>
+
+<h4>Connect...</h4>
+
+<p>This option will open the Login Dialog where you can enter
+your username and password you have and then connect you to the
+server.</p>
+
+<h4>Disconnect</h4>
+
+<p>This option will disconnect you from FIBS if you are
+connected.</p>
+
+<h4>New User...</h4>
+
+<p>This option will let you register a new username on FIBS. It
+opens a dialog where you can select your new username and
+password. After it has managed to create your new account it will
+connect to FIBS with the new account.</p>
+
+<h4>Change User...</h4>
+
+<p>If you are more people that are sharing JavaFIBS 2001 each
+person will contain its own profile. This option is for swapping
+between the different users. If this option is not used, the next
+user will use the previous user's settings when connecting to
+FIBS with the Login dialog.</p>
+
+<h4>About</h4>
+
+<p>This option will bring up the About dialog that displays some
+basic information about JavaFIBS 2001.</p>
+
+<h4>Exit</h4>
+
+<p>This option will close the JavaFIBS 2001 program.</p>
+
+<h4><a name="command_menu"></a>3.2.2 Command Menu</h4>
+
+<p>This menu contains some useful commands that you can send to
+FIBS.</p>
+
+<h4>Toggle Menu...</h4>
+
+<p>The toggle menu lets you change some commonly used settings in
+FIBS.</p>
+
+<h4>Saved Games</h4>
+
+<p>This option will display all saved games you have on FIBS.
+Normally, a saved game will disappear after two months if it is
+not continued.</p>
+
+<h4>Ongoing Games</h4>
+
+<p>This option will display all ongoing games in FIBS.</p>
+
+<h4>Ratings (Top 20)</h4>
+
+<p>This command will show you the top 20 rated people on FIBS. It
+will also show you which rating number you have.</p>
+
+<h4>Watchers</h4>
+
+<p>This command will show you what users are currently watching
+other users.</p>
+
+<h4>Players Away</h4>
+
+<p>This command will show you all users that are currently away
+along with their messages.</p>
+
+<h4>E-mail Address...</h4>
+
+<p>This option will let you set your e-mail address in the
+address field in FIBS. A dialog will open where you can type in
+your e-mail address. You need to be connected to FIBS to do this.</p>
+
+<h4><a name="preferences_menu"></a>3.2.3 Preferences Menu</h4>
+
+<p>This menu lets you alter different settings in the JavaFIBS
+2001 client.</p>
+
+<h4>Server...</h4>
+
+<p>This option will let you change the server name and port
+number for FIBS. Sometimes, FIBS changes IP provider and then you
+may have to enter the new IP number to be able to log in. Most of
+the time "fibs.com" will work as the server name, even
+if it will take some time after a move.</p>
+
+<h4>Fonts...</h4>
+
+<p>This option lets you change the fonts and sizes of the
+different text areas and tables.</p>
+
+<h4>Board...</h4>
+
+<p>This option will let you change the preferences for the
+graphical board to alter its appearance.</p>
+
+<h4>Log Games...</h4>
+
+<p>This option lets you decide if you want JavaFIBS 2001 to log
+the games you are watching and playing so you can view them at a
+later time or convert them to a different format.</p>
+
+<h4>Profile...</h4>
+
+<p>This option opens up a dialog where you can enter your name,
+gender and country which will be shown to other JavaFIBS 2001
+users on FIBS when you connect.</p>
+
+<h4>Decline Message...</h4>
+
+<p>This option will let you change the message that are sent when
+you decline an invitation from a user.</p>
+
+<h4>Programmable Buttons...</h4>
+
+<p>This option will let you alter the fifteen user definable
+buttons on the main toolbar. See the section about <A href="instructions.html#programmable_buttons">programmable
+buttons</A> for a description how it works.</p>
+
+<h4>Look &amp; Feel Menu</h4>
+
+<p>This will let you change to overall appearance of the JavaFIBS 2001 client. The Metal- and CDE/Motif L&amp;F are available
+on all platforms while the Windows L&amp;F only is useable
+for Windows users and the Mac L&amp;F only for Mac
+users because of copyright reasons.</p>
+
+<h4>Sound</h4>
+
+<p>This option lets you select if you want the sound on in the
+client or not. If selected JavaFIBS 2001 will take over all sound
+resources on the system.</p>
+
+<h4>Automatic Jellyfish Export</h4>
+
+<p>If this option is selected, all played and and matches will be saved in both the internal and the
+Jellyfish format. This is identical in behaviour as if you just converted the match using the
+Tools -> Matchconverter dialog (see <a href="#tools_menu">here</a>.</p>
+
+<h4>Status Bar</h4>
+
+<p>This option will add a status bar to the bottom of the client
+if this option is selected. The status bar will show system
+information.</p>
+
+<h4>Auto Login</h4>
+
+<p>This option will automatically log the last user in to FIBS when the program is started if
+this option is selected.</p>
+<H4>System Area Full Output</H4>
+<P>When this option is selected, it will hide the two bottom text areas (by 
+moving the split pane border to the bottom) and output all text information in 
+the System text area (system information, notify text, shouts, chat, etc) 
+instead of having it divided into different text areas.</P>
+
+<h4>3.2.4 Tools Menu<a name="tools_menu"></a></h4>
+
+<p>This menu contains some useful tools that can be used.</p>
+
+<h4>Match Converter</h4>
+
+<p>This tool lets you convert the matches you have played into
+JellyFish .mat format which is useful for a number of other
+backgammon programs. The converted matches are always saved in
+the JavaFIBS2001/matches/jellyfish/ directory.</p>
+
+<h4>Statistics</h4>
+
+<p>This tool shows some extensive statistics over the matches you
+have played.</p>
+
+<h4>         3.2.5
+Help Menu</h4>
+
+<p>This menu contains the help documents to let you access
+it easily.</p>
+
+<h4>         
+ Contents...</h4>
+
+<p>This option will open up the table of contents for the 
+JavaFIBS 2001 User Guide in a simple browser window included in the program. It 
+works like your standard browser. Just click on the links to go to the section
+you want.</p>
+
+<h2><a name="graphical_board"></a>4. Graphical Board</h2>
+
+<h3><a name="playing_on_board"></a>4.1 Playing on the Board</h3>
+
+<p>This section describe how you interact with the checkers and
+dice on the graphical board to play a game. While it is possible
+to play on the board with a mouse with only one button, three
+buttons are recommended for fastest and easiest play.</p>
+
+<h4><a name="roll_dice"></a>4.1.1 Roll Dice</h4>
+
+<p>To roll the dice click on the roll dice icon on the board. It
+will only appear when it is your turn to roll or double.</p>
+
+<h4><a name="move_checkers"></a>4.1.2 Move Checkers</h4>
+
+<p>There are two ways of moving the checkers on the board. The
+first one is dragging them by holding the mouse pointer over one,
+press either mouse button and then move the checker to where you
+want to place it while keeping the button pressed. You can only
+place checkers on correct spots, otherwise they will jump back to
+where they were dragged. The second way of moving the checkers is
+by holding your mouse pointer over the checker you want to move
+and then click either on the left or right mouse button. The left
+mouse button will move the checker according to the left die and
+the right mouse button will move the checker according to the
+right die. When you have moved one checker, both mouse buttons
+will move the next checker according to the die that is left to
+move.</p>
+
+<h4><a name="pickup_dice"></a>4.1.3 Pickup Dice</h4>
+
+<p>When you have completed your move and want to send the it to
+FIBS you have to click the left mouse button on the dice on the
+board. </p>
+
+<h4><a name="cube_handling"></a>4.1.4 Double/Accept/Reject Cube</h4>
+
+<p>To double the cube you have to double click on the cube icon
+on the board. To accept a cube offer from your opponent you also
+have to double click on the cube icon which should be shown in
+your opponent's dice area. To reject the cube, click on the
+reject icon on the board (often shown as a red cross).</p>
+
+<h4><a name="resign_handling"></a>4.1.5 Accept/Decline Resign</h4>
+
+<p>When your opponent wants to resign, a resign icon (shown often
+as a white flag) will appear on the board which shows what kind
+of resign your opponent offers. If you double click on the resign
+icon, you will accept your opponent's resignation. A reject icon
+will also appear on the board (shown as a red cross) and by
+clicking on that you will decline your opponent's offer.</p>
+
+<h4><a name="undo_move"></a>4.1.6 Undo Move</h4>
+
+<p>To undo a move not yet sent to FIBS you can click on the left
+mouse button on the undo icon which is located in the middle of
+the bar area or press the middle mouse button anywhere on the
+board if you have one. The latter is only useable if you have set
+your middle mousebutton to work as the third mousebutton.</p>
+
+<h4><a name="swap_dice"></a>4.1.7 Swap Dice</h4>
+
+<p>JavaFIBS 2001 always put the player's highest die to the left
+in the dice area when it's the player's turn to move. If you only
+have one mouse button or just want to use your left mouse button
+on the board, you can switch the places of the dice by clicking
+on them before you make any move.</p>
+
+<h3><a name="board_toolbar"></a>4.2 Board Toolbar</h3>
+
+<h4><img alt="" 
+src="..\images\undo.gif" align="textTop" 
+border=1> &nbsp;Undo Moves</h4>
+
+<p>This button will take back all the moves you have made 
+so far for this turn. Moves already sent to FIBS cannot be taken back.</p>
+
+<h4><img height="16" src="../images/autoroll.gif" width="16"
+ align="textTop" border=1 > Autoroll Dice</h4>
+
+<p>This button sends the toggle double command to FIBS. The
+setting will be reset after each game point so you will have to
+press the button each game to autoroll. One exception to this is
+when you have one point from winning the match, then the default
+value will be that it will not ask you to double but roll the
+dice automatically.</p>
+
+<h4><img height="16" src="../images/greedy.gif" width="16"
+ align="textTop" border=1 > Greedy Checker Bear Off</h4>
+
+<p>This button will send the toggle greedy command to FIBS. This
+means it will move home as many checkers it can automatically
+when you are able to bear off. Beware, it will do so even if your
+opponent still is able to hit you. The command will be set to off
+after every game.</p>
+
+<h4><img height="16" src="../images/resign.gif" width="16"
+ align="textTop" border=1 > Resign</h4>
+
+<p>This button will let you resign the game you are playing. A
+dialog will pop up so you can offer offer points between a normal
+(1 x cube), gammon (2 x cube) or backgammon (3 x cube)
+resignation to your opponent.</p>
+
+<h4><img height="16" src="../images/newboard.gif" width="16"
+ align="textTop" border=1 > Refresh Board</h4>
+
+<p>This button will send a board command to FIBS to receive a
+fresh board from the server. This is useful if something weird
+has happened to the board or if you did a look on someone that
+brings up someone else's board.</p>
+
+<h4><img height="16" src="../images/checkertarget.gif"
+ width="16" align="textTop" border=1 > Checker Target Help</h4>
+
+<p>When this button is pressed it will show all places that a
+dragged checker can move to. It will also light up the target
+when you are above it when dragging so it will be easier to drop
+the checker on the right place. The latter is only available on
+the bitmap boards due to technical issues.</p>
+
+<h4><img alt="" 
+src="..\images\pipcount.gif" align="textTop" 
+border=1>           
+           
+             
+           
+     &nbsp;Pip Count</h4>
+
+<p>           
+           
+             
+   When this button is pressed, the pip count will
+be shown next to the players' scores.</p>
+
+<h4><img height="16" src="../images/loadboard.gif" width="16"
+ align="textTop" border=1 > Load Logged Match</h4>
+
+<p>This button will let you load a logged match back into
+JavaFIBS 2001 to review it.</p>
+
+<h4><img height="16" src="../images/saveboard.gif" width="16"
+ align="textTop" border=1 > Save Board</h4>
+
+<p>This button will let you save the current board into different
+formats for different purposes. Currently only ASCII and
+JellyFish .pos formats are supported.</p>
+
+<h4><img height="16" src="../images/fastreverse.gif"
+ width="16" align="textTop" border=1 > Previous Game</h4>
+
+<p>This button will scroll back to find the previously stored
+game start and show that on screen.</p>
+
+<h4><img height="16" src="../images/reverse.gif" width="16"
+ align="textTop" border=1 > Previous Board</h4>
+
+<p>This button will show the previously stored board on screen.</p>
+
+<h4><img height="16" src="../images/forward.gif" width="16"
+ align="textTop" border=1 > Next Board</h4>
+
+<p>This button will show the next stored board on screen.</p>
+
+<h4><img height="16" src="../images/fastforward.gif"
+ width="16" align="textTop" border=1 > Next Game</h4>
+
+<p>This button will scroll forward to find the next stored game
+start and show that on screen.</p>
+
+<h4>The Board Counter</h4>
+
+<p>The numbers divided by a slash ( / ) to the furthest right on the
+toolbar is showing the present board and the total amount of
+stored boards. The first number shows which board is currently
+shown on screen. A - means the last stored board. The number
+after the slash shows how many boards there are in total in the
+match stored in memory.</p>
+
+<h3><a name="board_settings"></a>4.3 Board Settings</h3>
+
+<p>You can change the appearance on the graphical board with the <em>Board...</em>
+option in the <em>Preferences</em> menu. The following sections
+describe the settings you can change</p>
+
+<h4><a name="board_list"></a>4.3.1 Board List</h4>
+
+<p>First you can decide if you want to use a resizable vector
+board or a fixed sized bitmap board. The biggest difference is
+that the vector board is resizable and the bitmap boards are not.
+If you select to use the bitmap board, you have a few already
+made boards with different graphical appearance to choose from.
+If you are not satisfied with the boards that is included you can
+draw your own and use with JavaFIBS 2001. See section <A
+ href="Instructions.html#creating_custom_boards" >4.4 Creating a
+Custom Board</A>. The information area to the right of the list
+displays some information about all the boards.</p>
+
+<h4><a name="board_view"></a>4.3.2 Board View</h4>
+
+<p>This part lets you decide if you want to play clockwise or
+counter-clockwise. Normally in JavaFIBS 2001 you play by moving
+your checkers from top right to bottom right. By setting the view
+to mirrored you will instead play from top left to bottom left.</p>
+
+<h4><a name="board_translucency"></a>4.3.3 Board Translucency</h4>
+
+<p>This option lets you select the translucency level on the
+checkers and dice. The values range from fully opaque (default)
+to 50% translucency level.</p>
+
+<h4><a name="vector_board_textures"></a>4.3.4 Vector Board
+Textures and Colours</h4>
+
+<p>This option will let you change the colours and textures on
+the vector board. The less textures you use, the faster the
+vector board will be drawn and therefore faster to play on. Play
+around with the settings to find the optimal balance between
+textures complexity and speed.</p>
+
+<h3><a name="creating_custom_boards"></a>4.4 Creating a Custom
+Board</h3>
+
+<p>Follow these steps to make your own board to use with JavaFIBS
+2001.</p>
+
+<ol>
+    <li>Draw the board graphics and save the images as .gif
+        pictures (jpeg pictures will also work). The pictures you
+        will need are: <ul>
+            <li>background.gif - the board background with the 
+    points. 
+            <li>cube1.gif - a cube image which shows the undoubled 
+    cube. 
+            <li>cube2.gif - a cube image which has the number 2 on. 
+            <li>cube4.gif - a cube image which has the number 4 on. 
+            <li>cube8.gif - a cube image which has the number 8 on. 
+            <li>cube16.gif - a cube image which has the number 16 
+    on. 
+            <li>cube32.gif - a cube image which has the number 32 
+    on. 
+            <li>cube64.gif - a cube image which has the number 64 
+    on. 
+            <li>playerdie1.gif - a die image which shows 1 for the 
+    player. 
+            <li>playerdie2.gif - a die image which shows 2 for the 
+    player. 
+            <li>playerdie3.gif - a die image which shows 3 for the 
+    player. 
+            <li>playerdie4.gif - a die image which shows 4 for the 
+    player. 
+            <li>playerdie5.gif - a die image which shows 5 for the 
+    player. 
+            <li>playerdie6.gif - a die image which shows 6 for the 
+    player. 
+            <li>opponentdie1.gif - a die image which shows 1 for the 
+    opponent. 
+            <li>opponentdie2.gif - a die image which shows 2 for the 
+    opponent. 
+            <li>opponentdie3.gif - a die image which shows 3 for the 
+    opponent. 
+            <li>opponentdie4.gif - a die image which shows 4 for the 
+    opponent. 
+            <li>opponentdie5.gif - a die image which shows 5 for the 
+    opponent. 
+            <li>opponentdie6.gif - a die image which shows 6 for the 
+    opponent. 
+            <li>playerpiece.gif - a normal checker image for the 
+    player. 
+            <li>playerpiecehome.gif - a checker image for the player 
+    when the checker is on home. 
+            <li>opponentpiece.gif - a normal checker image for the 
+    opponent. 
+            <li>opponentpiecehome.gif - a checker image for the 
+    opponent when the checker is on home. 
+            <li>pip12to1.gif - pip numbers which shows the points 12 
+    to the left counting down to 1 at the far right side. 
+            <li>pip13to24.gif - pip numbers which shows the points 
+    13 to the left counting up to 24 at the far right side. 
+            <li>pip1to12.gif - pip numbers which shows the points 1 
+    to the left counting up to 12 at the far right side. 
+            <li>pip24to1.gif - pip numbers which shows the points 24 
+    to the left counting down to 13 at the far right side. 
+            <li>resignn.gif - a resign image that is shown when 
+    someone resigns normal. 
+            <li>resigng.gif - a resign image that is shown when 
+    someone resigns gammon. 
+            <li>resignb.gif - a resign image that is shown when 
+    someone resigns backgammon. 
+            <li>reject.gif - an image that works as a reject button 
+    for resigns and doubles. 
+            <li>rolldice.gif - an image which shows it is time to 
+    roll (or double) for the player. 
+            <li>undo.gif - an image showing where the undo is on
+                the board.</li>
+        </ul>
+    <li>Make two text files named normal.metrics and
+        reverse.metrics. In these textfiles you type in where on
+        the board the different areas are as starting points with
+        an x and y coordinate. The size of the areas are entered
+        at the end like tuples of width and height in pixels. The
+        coordinates and size must be separated with a comma-sign
+        (,) such as 0,0. You can also modify one of the files in
+        the existing boards. The normal.metrics file is used when
+        you are playing counter-clockwise starting in the top
+        right corner and the reverse is used when playing
+        clockwise starting in the top left corner. The
+        coordinates must be placed in rows in the following
+        order: <ul>
+            <li>top left coordinate of the left die position for the 
+    player. 
+            <li>top left coordinate of the right die for the player. 
+
+            <li>top left coordinate of the left die for the 
+    opponent. 
+            <li>top left coordinate of the right die for the 
+    opponent. 
+            <li>top left coordinate of the cube location when the 
+    player owns the cube. 
+            <li>top left coordinate of the cube location when the 
+    opponent owns the cube. 
+            <li>top left coordinate of the cube location when it has 
+    not been doubled yet. 
+            <li>top left coordinate of the cube location when the 
+    cube just has been doubled. 
+            <li>bottom left coordinate of the player's bar area 
+    (where checkers are moved to when hit). 
+            <li>top left coordinate of the opponent's bar area. 
+            <li>bottom left coordinate of the player's home area 
+    (where the checkers are moved when borne off). 
+            <li>top left coordinate of the opponent's home area. 
+            <li>top left coordinate of the roll dice area (where the 
+    roll picture will appear). 
+            <li>top left coordinate of the resign area (where the 
+    resign pictures will appear). 
+            <li>top left coordinate of the reject area (where the 
+    reject picture for resigns and doubles will appear). 
+            <li>top left coordinate of the join area (this is 
+    currently unused in this version of JavaFIBS 2001 but needs to be entered as 
+    well). 
+            <li>top left coordinate of the undo area. 
+            <li>top left coordinate of the upper point number 
+    pictures. 
+            <li>top left coordinate of the lower point number 
+    pictures. 
+            <li>top left coordinate of the top right point area 
+    (point 1 in normal and point 12 in reverse). 
+            <li>top left coordinates of the rest of the top 
+    points... 
+            <li>top left coordinate of the bottom left point area 
+    (point 13 in normal and point 24 in reverse). 
+            <li>top left coordinates of the rest of the lower 
+    points... 
+            <li>the width and height of a point area. 
+            <li>the width and height of a normal checker. 
+            <li>the width and height of a home checker. 
+            <li>the width and height of the roll dice area. 
+            <li>the width and height of the join area. 
+            <li>the width and height of the reject area. 
+            <li>the width and height of a die. 
+            <li>the width and height of the undo area. 
+            <li>the width and height of the cube. 
+            <li>the width and height of the resign area.</li>
+        </ul>
+    <li>Make a snapshot picture of the board and shrink it so 
+  the width becomes 150 pixels. Name it thumbnail.gif. 
+    <li>Create a textfile called information.metrics and type 
+  in your name in it. 
+    <li>Name your board by creating a folder/directory with 
+  that name and put all the files in it. Avoid using special characters and 
+  whitespace in the name and make sure you do not have a board with that name 
+  already. 
+    <li>Put the folder in the JavaFIBS2001/boards/ folder. Now
+        you can select your board in the board list when you open
+        the preferences for the board. </li>
+</ol>
+
+<p>Note: The dice area should be at least two dice in height and
+one die width from each other since JavaFIBS randomize the
+location for each dice with a value from 0 to half a dice from
+each die location.</p>
+
+<h2><a name="players"></a>5 Players</h2>
+
+<p>The Players table shows the users that are currently logged in
+on FIBS. It is dynamically updated so it always shows
+the current status of the players. By double clicking with the
+left mouse button or click on the right mouse button on a user
+will bring up a popup menu where you can perform different
+actions on that user such as invite him or mark him as a friend. </p>
+
+<h3><a name="players_toolbar"></a>5.1 Players Toolbar</h3>
+
+<h4><img height="16" src="../images/pready.gif" width="16"
+ align="textTop" border=1 > Show Ready Users</h4>
+
+<p>When this button is pressed it will show the ready users in
+the player table. If it is not pressed those users will not
+appear in the list.</p>
+
+<h4><img height="16" src="../images/ponline.gif" width="16"
+ align="textTop" border=1 > Show On-Line Users</h4>
+
+<p>This button decides if you want to see those players that are
+neither playing nor ready to be invited in the player table. </p>
+
+<h4><img height="16" src="../images/pplaying.gif" width="16"
+ align="textTop" border=1 > Show Playing Users</h4>
+
+<p>This button lets you decide if you want to show the users that
+are currently playing a game in the player table.</p>
+
+<h4><img height="16" src="../images/punknown.gif" width="16"
+ align="textTop" border=1 > Show Unknown Users</h4>
+
+<p>This button lets you decide if you want to see those players
+that have a status that is undefinable. They turn into this state
+if they are playing and their opponent leaves FIBS. It is
+uncertain if they are in the ready state or the on-line state
+when this happens.</p>
+
+<h4>Pts:</h4>
+
+<p>This box will let you set the amount of points you want to
+play when you invite someone. It affects both the invite in the
+player table and the invite in the invitation table. Resume means
+you want to invite someone to finish a currently saved game you
+have with that person and unlimited means you want to play a
+match which will never end with someone.</p>
+
+<h4><img height="16" src="../images/invite.gif" width="16"
+ align="textTop" border=1 > Invite User to a Match</h4>
+
+<p>This button will send an invitation to the currently selected
+person in the player table. That person will be invited to play
+the number of points you have selected in the point box to the
+left of this button.</p>
+
+<h4><img height="16" src="../images/wand.gif" width="16"
+ align="textTop" border=1 > Auto Invite User to a Match</h4>
+
+<p>This button will let you set the interface to watch for
+someone to become available to play with. When the selected
+person becomes available JavaFIBS 2001 will then automatically
+invite that person to a match with the points you select. This
+comes in handy if you for example are trying to play one of the
+bots on FIBS so you do not have to guard it yourself.</p>
+
+<h4><img height="16" src="../images/updatetable.gif"
+ width="16" align="textTop" border=1 > Update Table</h4>
+
+<p>This button clears the whole player table and then reloads all
+users into it. This may be necessary occasionally due to bugs in
+FIBS which will cause some commands to vanish which is necessary
+for a correct update of the table.</p>
+
+<h4>In:</h4>
+
+<p>This number shows how many players are currently logged in on
+FIBS.</p>
+
+<h2><a name="friends"></a>6 Friends</h2>
+
+<p>JavaFIBS 2001 lets you keep track of your friends in an easy
+way. All friends you have added will be shown here and their
+current status if they are logged on or not and what they do if
+they are on. You can colour your friends so they will become
+easier to spot in the player table or when they appear in the
+text areas. You will also always be notified when one of your
+friends log in, even if you do not show when the users enter and
+leave.</p>
+
+<h3><a name="friends_toolbar"></a>6.1 Friends Toolbar</h3>
+
+<h4><img height="16" src="../images/happysmiley.gif"
+ width="16" align="textTop" border=1 > Add Friend</h4>
+
+<p>This button opens up a dialog where you can enter your
+friend's name. It is necessary to type in the name exactly as it
+appears in FIBS with both upper and lower case letters.</p>
+
+<h4><img height="16" src="../images/colour.gif" width="16"
+ align="textTop" border=1 > Colour Friend</h4>
+
+<p>This button lets you change the colour on your friend. This
+colour is the colour that will appear in the players table and in
+the text areas when this person appears.</p>
+
+<h4><img height="16" src="../images/removesmiley.gif"
+ width="16" align="textTop" border=1 > Remove Friend</h4>
+
+<p>This button removes the currently selected person in the
+friend list.</p>
+
+<h4><img height="16" src="../images/chat.gif" width="16"
+ align="textTop" border=1 > Chat With Friend</h4>
+
+<p>This button will open up a separate chat window to let you
+speak with your friend. Will only work if the friend is logged
+into FIBS.</p>
+
+<h4><img height="16" src="../images/message.gif" width="16"
+ align="textTop" border=1 > Leave Message for Friend</h4>
+
+<p>This button lets you leave a message to your friend which
+(s)he will receive next time (s)he logs in. If the person is
+already in, (s)he will receive the message instantly.</p>
+
+<h4><img height="16" src="../images/querysmiley.gif"
+ width="16" align="textTop" border=1 > Whois Friend</h4>
+
+<p>This button will send a <em>whois &lt;user&gt; </em>command to
+FIBS to fetch the information about your friend. The information
+will be displayed in the System text area.</p>
+
+<h3><a name="friends_popup_menu"></a>6.2 Friends Popup Menu</h3>
+
+<p>You can bring up a popup menu by double clicking on the left
+mouse button or by clicking on the right mouse button on a friend
+in the table. The entries are just the same as those found in the
+toolbar.</p>
+
+<h3><a name="friends_table"></a>6.3 Friends Table</h3>
+
+<p>There are three column in the friends table. The column named
+On shows <img height="16" src="../images/connect.gif"
+ width="16" align=absMiddle > if that friend is online and nothing if
+(s)he is not. The Name column contains the name of the friend and
+the friend's name has the colour which that friend will have when
+(s)he appears in tables or text areas. The Status column shows
+what the friend is doing in FIBS if (s)he is logged on.</p>
+
+<h2><a name="villains"></a>7. Villains</h2>
+
+<p>JavaFIBS 2001 lets you ignore the people you do not want to
+listen to. All persons you add to this list will not be shown
+wether they try to talk to you, shout or log in/out. They will
+not appear in the invitation table either and you won't see any
+messages left to you from them either. In the Players table they
+will appear with a light gray colour. If they try to watch any of
+your matches they will immediately be banned from the match since
+JavaFIBS 2001 sends the <em>blind &lt;user&gt;</em> command if
+that happens. Remember, they will still be able to hear you when
+you shout or speak .</p>
+
+<h3><a name="villains_toolbar"></a>7.1 Villains Toolbar</h3>
+
+<h4><img height="16" src="../images/angrysmiley.gif"
+ width="16" align="textTop" border=1 > Add Villain </h4>
+
+<p>This button will let you enter a new villain into to the
+table.</p>
+
+<h4><img height="16" src="../images/removesmiley.gif"
+ width="16" align="textTop" border=1 > Remove Villain</h4>
+
+<p>This button will remove the selected villain from the table to
+become an ordinary person again.</p>
+
+<h2><a name="invitations"></a>8. Invitations</h2>
+
+<p>The table to the top right are for displaying and
+handling incoming invitations from other players. When someone
+invites you, his or her name will appear in the table along with
+some of the person's details. The table also shows how many
+rating points you will gain if you win and how many rating points
+you will lose if you lose the match. By double clicking on the
+left mouse button or single click on the right mouse button on a
+person in the table a popup menu will appear where you can decide
+what to do with the invitation.</p>
+
+<h3><a name="invitations_popup_menu"></a>8.1 Invitations Popup
+Menu</h3>
+
+<h4>Join</h4>
+
+<p>This option will accept the person's invitation and start
+playing with the person.</p>
+
+<h4>Decline</h4>
+
+<p>This option will send a message to the inviter declining the
+invitation. You can change the message with the <em>Decline
+Message... </em>option in the <em>Preferences</em> menu</p>
+
+<h4>Ignore</h4>
+
+<p>This option will just remove the invitation from the table
+without doing anything else. </p>
+
+<h4>Invite</h4>
+
+<p>This option will invite the inviter to the number of points
+you currently have selected in the players table.</p>
+
+<h2><a name="matches"></a>9. Matches</h2>
+
+<p>With JavaFIBS 2001 you can save your matches to replay them
+later on the JavaFIBS 2001 graphical board or convert them to
+other formats for other programs.</p>
+
+<h3><a name="save_matches"></a>9.1 Save Matches</h3>
+
+<p>JavaFIBS 2001 is able to save your matches you play and/or
+watch automatically. The <em>Log Matches...</em> in the <em>Preferences</em>
+menu lets you decide when to save the matches. The default is
+that all matches you play will be saved but not when you are
+watching. The matches are saved in an internal match format (see
+9.4 JavaFIBS 2001 Match Format). Some matches may not be saved
+properly because they have been interrupted in the middle or some
+FIBS output has disappeared. JavaFIBS 2001 tries to save as much
+information about these matches anyhow.</p>
+
+<h3><a name="replay_matches"></a>9.2 Replay Saved Matches</h3>
+
+<p>You can replay the old matches that have been saved in
+JavaFIBS 2001. By clicking on <img height="16"
+ src="../images/loadboard.gif" width="16" align=absBottom > in the Board's toolbar
+you will be presented with all matches that has currently been
+saved in JavaFIBS 2001. After you have selected a match to
+review, the match will be loaded into the graphical board for you
+to scroll through with the use of the arrow buttons.</p>
+
+<h3><a name="convert_matches"></a>9.2 Export Matches</h3>
+
+<p>If you want to use your saved matches in another program, you
+may want to convert them to a format that can be read by them.
+Most, if not all, backgammon programs can read the JellyFish .mat
+format and is therefore the chosen format that JavaFIBS 2001 will
+convert the matches to. You find the match converter in the <em>Tools</em>
+menu</p>
+
+<h3><a name="internal_format"></a>9.3 JavaFIBS 2001 Match Format</h3>
+
+<p>JavaFIBS 2001 keeps the matches saved in an internal text format. The first line shows the kind of
+text file it is. The rest shows the match. All commands are represented
+by a number and after that number the data for that
+command comes separated by a colon (:). The commands and their
+number and data are described in the table below, which represents version 1.1
+of the format.</p>
+
+<table border="1">
+    <tr>
+        <td><strong>Command</strong></td>
+        <td><strong>Number</strong></td>
+        <td><strong>Data 1</strong></td>
+        <td><strong>Data 2</strong></td>
+    </tr>
+    <tr>
+        <td>roll die</td>
+        <td>0</td>
+        <td>&lt;player&gt;</td>
+        <td>&lt;die&gt; &lt;die&gt;</td>
+    </tr>
+    <tr>
+        <td>move checker</td>
+        <td>1</td>
+        <td>&lt;player&gt;</td>
+        <td>&lt;move&gt; &lt;move&gt; ...</td>
+    </tr>
+    <tr>
+        <td>double cube</td>
+        <td>2</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>resign game</td>
+        <td>3</td>
+        <td>&lt;player&gt;</td>
+        <td>&lt;resign points&gt;</td>
+    </tr>
+    <tr>
+        <td>accept cube</td>
+        <td>4</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>reject cube</td>
+        <td>5</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>start game</td>
+        <td>6</td>
+        <td>&lt;player1&gt;</td>
+        <td>&lt;player2&gt;</td>
+    </tr>
+    <tr>
+        <td>finish game</td>
+        <td>7</td>
+        <td>&lt;winning player&gt;</td>
+        <td>&lt;points won&gt;</td>
+    </tr>
+    <tr>
+        <td>match start</td>
+        <td>8</td>
+        <td>&lt;opponent&gt;</td>
+        <td>&lt;match length&gt;</td>
+    </tr>
+    <tr>
+        <td>finish match</td>
+        <td>9</td>
+        <td>&lt;winning player&gt;</td>
+        <td>&lt;match length&gt;</td>
+    </tr>
+    <tr>
+        <td>init dice roll</td>
+        <td>11</td>
+        <td>&lt;player&gt;</td>
+        <td>&lt;die&gt; &lt;die&gt;</td>
+    </tr>
+    <tr>
+        <td>reject resign</td>
+        <td>12</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>game init</td>
+        <td>13</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>game score</td>
+        <td>14</td>
+        <td>&lt;player1&gt;-&lt;score&gt;</td>
+        <td>&lt;player2&gt;-&lt;score&gt;</td>
+    </tr>
+    <tr>
+        <td>cannot move</td>
+        <td>15</td>
+        <td>&lt;player&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<h2><a name="programmable_buttons"></a>10. Programmable Buttons</h2>
+
+<p>         In JavaFIBS
+2001 you can add new customised buttons to the top toolbar. When
+you select <em>Programmable Buttons</em> from the <em>Preferences</em> menu a 
+small window will open up that lets you add, remove, or change the contents 
+in a button. To add a button, insert the command you want to 
+have on this button in the text field, the picture it should have, and then 
+press the <em>add</em> button. To change the command or icon for a 
+button, you first select the button. Then alter the command in the text 
+field or icon and then press the <em>update</em> button. The four 
+buttons to the right of the text field will let you insert special tags into the 
+command of a button, which will let you interact with the interface better (see 
+below). When you are finished with all buttons, press <em>ok</em>.
+            
+          
+           
+           
+           
+          
+       . The commands will be
+saved after you have closed JavaFIBS 2001. </p>
+
+<p>          
+           
+             The tags
+and their functionality are you can use in the commands
+are:</p>
+<UL>
+    <li><strong>%Player</strong> - This tag will be substitited
+        by the currently selected person in the <em>Players</em> table when the command is sent to FIBS. 
+    <li><strong>%Friend</strong> - This tag will be substituted
+        by the currently selected person in the <em>Friends</em> table when the command is sent to FIBS. 
+    <li><strong>%Villain</strong> - This tag will be substituted
+        by the currently selected person in the <em>Villains</em> table when the command is sent to FIBS. 
+    <li><strong>%Opponent</strong> - This 
+  tag will be substituted by your last played opponent in this session when the command is sent to FIBS. 
+    <li><strong>%Inviter</strong> - This tag will be 
+  substituted by the selected inviter in the <em>Invitation</em>      
+               table when the
+        command is sent to FIBS.</li></UL>
+<P>Note: These tags can also be used in the autothank, autogreet and decline 
+messages.</P>
+
+<p>Example1: You want a greet button for your friends. Then in
+the text field in the programmable button you want to use you can
+write: "tell %Friend Hi! How are you doing today?" and
+every time you push this button it will send this greeting to the
+selected friend in the <em>Friends</em> table.</p>
+
+<p>Example 2: You want a button that will ask the selected person
+in the <em>Players</em> table if he wants to play: "tell
+%Player Would you like to play a 5 point match?"</p>
+
+<h2><a name="relocating_folders"></a>11. Relocating Data and Resource Folders</h2>
+
+Starting with version 1.010, JavaFIBS 2001 supports relocating it's folder locations. This still is an experimental feature likely
+to envolve further, so please use it with care. There are three Java properties which can be changed before program startup. How to set 
+properties for your Java is system and version dependent, please consult the Java documentation for details.
+
+<table>
+	<thead>
+	<tr><th>JavaFIBS 2001 Property</th><th>Default</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><tt>com.fibs.javafibs.home.user</tt></td>
+			<td>./user</td>
+			<td>The directory where user preferences and statistics are stored. You need read and write priviledges for
+				this directory.	Subfolders such as ${com.fibs.javafibs.home.user}/user/username will be created on demand.
+			</td>		
+		</tr>
+		<tr>
+			<td><tt>com.fibs.javafibs.home.matches</tt></td>
+			<td>./matches</td>
+			<td>The directory where matches are recorded. You need read and write priviledges for
+				this directory.	Subfolders such as ${com.fibs.javafibs.home.matches}/jellyfish will be created on demand.
+			</td>		
+		</tr>
+		<tr>
+			<td><tt>com.fibs.javafibs.home</tt></td>
+			<td>./</td>
+			<td>The directory where program resources such as images, textures, and sound files are stored.
+			     You need read only priviledges for
+				this directory.	The directory layout of this folder needs to be identical to the structure of 
+				the original JavaFIBS 2001 ZIP file, excluding the "user" and "matches" subfolders.
+			</td>		
+		</tr>
+	</tbody>
+
+</table>
+
+<p>Example: When starting JavaFIBS 2001 from a shell, you can set the location where matches are recorded like so:</p>
+<tt>java -jar -Dcom.fibs.javafibs.home.matches="c:/backgammon/javafibs/savedgames" JavaFIBS2001.jar</tt> 
+ <p>
+ The path names given as parameters of the properties can either be path names in your OS's native syntax, pathnames using the single
+ slash path separator (/), or file URL as per RFC 1738. It should be safest to just use native OS path syntax, however. 
+ </p>  
+</body>
+</html>
